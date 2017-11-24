@@ -33,9 +33,18 @@ var PersonSchema = new mongoose.Schema({
 });
 // 4 创建一个model
 var PersonModel = db.model('Person',PersonSchema);
+/*
 // 5 创建一个personEntity实体
 var personEntity = new PersonModel({name:'Krouky'});
 //打印这个实体的名字看看
 console.log(personEntity); //Krouky
 
 personEntity.save();
+*/
+PersonModel.create({name:'Krouky22'}, (err) => {
+	if (err) {
+		console.log(err);
+		return;
+	}
+	console.log('保存成功');
+})
