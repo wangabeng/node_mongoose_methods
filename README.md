@@ -1,2 +1,6 @@
 # node_mongoose_methods
 node使mongoose连接数据库
+
+node通过mongoose连接mongodb不用skema示例
+
+node通过mongoose连接mongodb用skema示例
