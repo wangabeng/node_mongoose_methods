@@ -19,7 +19,7 @@ PersonSchema.statics.findByName = function (name, cb) {
 }
 
 // 4-1 创建一个model 同时创建一个集合 可以直接在model上操作数据库 比如增加一条数据 create， 等等。如果在schema上创建了静态方法 比如删除 就可以直接使用
-var PersonModel = db.model('Person', PersonSchema, 'Person'); // 集合名如果是单数形式 必须要加第三个参数 且数据库就是‘Person’ 大写的
+var PersonModel = db.model('Person', PersonSchema, 'Person'); // 集合名如果是单数形式 必须要加第三个参数 且数据库就是‘Person’ 
 
 // 插入数据
 // 直接创建 用PersonModel的create方法
